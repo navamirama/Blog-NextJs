@@ -1,6 +1,6 @@
 import Image from "../../node_modules/next/image";
 import Link from "../../node_modules/next/link";
-import { IArticle } from "../../types/index";
+import { IArticle } from "../../types";
 import { formatDate } from "../../utils/index";
 
 interface IPropTypes {

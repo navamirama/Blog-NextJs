@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from 'react';
 import Link from '../../node_modules/next/link';
 import {  usePathname ,  useSearchParams} from '../../node_modules/next/navigation';
-import { ICategory, IArticle, ICollectionResponse, IQueryOptions} from '../../types/index';
+import { IArticle, ICategory, ICollectionResponse, IQueryOptions} from '../../types/index';
 import {useRouter} from 'next/navigation';
 import { AxiosResponse } from 'axios';
 import { fetchArticles } from '@/http/index';

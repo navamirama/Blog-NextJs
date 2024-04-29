@@ -1,12 +1,12 @@
 "use server"
 import React from 'react';
-import { IArticle } from '../../types/index';
 import { getArticles} from '@/http/index';
 import Image from "../../../../node_modules/next/image";
 import Head from 'next/head';
 import { formatDate } from '../../../../utils';
 import {BlocksRenderer, type BlocksContent} from "@strapi/blocks-react-renderer"
 import BlockRendererClient from '@/components/BlockRendererClient';
+import { IArticle } from '../../../../types';
 interface IPropType {
     article: IArticle;
     notFound?: boolean;

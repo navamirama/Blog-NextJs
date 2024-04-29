@@ -1,6 +1,6 @@
 import Image from "../../node_modules/next/image";
 import Link from "../../node_modules/next/link";
-import { IArticle } from "../../types/index";
+import { IArticle } from "../../types";
 
 interface IPropType {
     article: IArticle;

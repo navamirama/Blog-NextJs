@@ -2,7 +2,7 @@ import { fetchCategories } from '@/http/index';
 import type { NextPage } from 'next';
 import { AxiosResponse } from 'axios';
 import Head from 'next/head';
-import { ICategory, ICollectionResponse } from '../../types/index';
+import {  ICategory, ICollectionResponse } from '../../types/index';
 
 const Home: NextPage = () => {
   return (

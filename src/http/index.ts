@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { IArticle, ICategory, ICollectionResponse, IQueryOptions } from '../../types/index';
+import { IArticle, ICollectionResponse } from '../../types/index';
 import { AxiosResponse } from 'axios';
 import qs from 'qs';
 
