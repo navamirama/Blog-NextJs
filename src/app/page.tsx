@@ -1,7 +1,7 @@
 
 import { redirect } from 'next/navigation'
 import { fetchArticles, fetchCategories } from '@/http/index';
-import type { GetServerSideProps, NextPage } from 'next';
+import type { NextPage } from 'next';
 import { AxiosResponse } from 'axios';
 import Head from 'next/head';
 import { IArticle, ICategory, ICollectionResponse, IQueryOptions } from '../../types/index';

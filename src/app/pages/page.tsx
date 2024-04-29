@@ -1,11 +1,5 @@
-import { fetchCategories } from '@/http/index';
-import type { GetServerSideProps, NextPage } from 'next';
-import { AxiosResponse } from 'axios';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import { ICategory, ICollectionResponse } from '../../types/index';
-
-import './globals.css';
-
 const Home: NextPage = () => {
   return (
     <div>
@@ -17,19 +11,4 @@ const Home: NextPage = () => {
   )
 }
 
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  console.log('I am here')
-  const { data: categories }: AxiosResponse<ICollectionResponse<ICategory[]>> = await fetchCategories();
-  console.log('categories', categories);
-  return {
-    props: {
-
-      categories: {
-        items: categories.data
-      }
-
-    }
-  }
-}
 export default Home;
