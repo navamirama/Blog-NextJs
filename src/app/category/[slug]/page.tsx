@@ -7,10 +7,10 @@ import { AxiosResponse } from 'axios';
 // import {  usePathname ,  useSearchParams} from '../../../../node_modules/next/navigation';
 import { fetchArticles, fetchCategories } from '@/http/index';
 import { IArticle, IPagination, ICategory, ICollectionResponse } from '../../../../types';
-import qs from 'qs';
 import ArticleList from '@/components/ArticleList';
 import Pagination from '@/components/Pagination';
 import { capitalizeFirstLetter, makeCategory } from '../../../../utils';
+import qs from 'qs';
 
 interface IPropType {
     categories: {
