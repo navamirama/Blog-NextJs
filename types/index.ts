@@ -71,7 +71,7 @@ export interface IAuthor {
 export interface IArticlesAttribute {
     Title: string;
     Slug: string;
-    body: BlocksContent;
+    Body: BlocksContent;
     Image: IImageData;
     createdAt: string;
     author: IAuthor;
