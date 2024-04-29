@@ -1,6 +1,4 @@
 import { Roboto } from 'next/font/google'
-import type { AppProps } from 'next/app'
-import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/Footer'
 
