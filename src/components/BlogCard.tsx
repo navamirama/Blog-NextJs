@@ -10,10 +10,10 @@ interface IPropTypes {
 
 export default function BlogCard({ article }: IPropTypes) {
     // console.log("Blog Card", article);
-    // console.log("Blog Card", article);
+    // console.log("Blog Attributes", article.attributes.author.attributes);
     return (<div>
-        <Link href="#">
-            <h1 className="text-xl text-grey-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
+        <Link href={`/article/${article.attributes.slug}`}>
+            <h1 className="text-xl  text-primary font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
                 {article.attributes.Title}
             </h1>
         </Link>
@@ -30,7 +30,7 @@ export default function BlogCard({ article }: IPropTypes) {
             </span>
 
         </div>
-        <div className="text-gray-500">
+        <div className="text-black-100">
             {article.attributes.shortDescription.slice(0, 250)}{' '}
             {article.attributes.shortDescription.length > 250 ? '...' : ''}
         </div>

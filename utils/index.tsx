@@ -21,6 +21,17 @@ return '';
 
 
 export const capitalizeFirstLetter = (str: string) => {
-    console.log(str.charAt(0).toUpperCase() + str.slice(1));
+    // console.log(str.charAt(0).toUpperCase() + str.slice(1));
     return str.charAt(0).toUpperCase() + str.slice(1);
 } 
+
+export const debounce = (fn: (query: string) => void, timeout = 300) => {
+    let timer: NodeJS.Timeout;
+    const debounced = (...args: any) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            fn.apply(this, args);
+        }, timeout);
+    };
+    return debounced;
+};

@@ -1,3 +1,5 @@
+import { BlocksContent } from "@strapi/blocks-react-renderer";
+
 export interface ICategory {
     id: number;
     attributes: ICategoryAttribute;
@@ -69,7 +71,7 @@ export interface IAuthor {
 export interface IArticlesAttribute {
     Title: string;
     Slug: string;
-    body: string;
+    body: BlocksContent;
     Image: IImageData;
     createdAt: string;
     author: IAuthor;
@@ -78,3 +80,13 @@ export interface IArticlesAttribute {
 }
 
 export type TDirection = 1 | -1;
+
+export interface IQueryOptions {
+    filters: any;
+    sort: any;
+    populate: any;
+    pagination: {
+        page: number;
+        pageSize: number;
+    };
+}

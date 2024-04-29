@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/Footer'
+import GoogleAnalytics from './GoogleAnalytics'
 
 const roboto = Roboto({
   weight: '700',
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`container mx-auto ${roboto.className}`}>
         <Navbar />
         <main className="pb-32">
+        <GoogleAnalytics />
           {children}
 
         </main>

@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@strapi/blocks-react-renderer": "^1.0.1",
     "axios": "^1.6.5",
+    "d": "^1.0.2",
     "next": "14.0.4",
+    "next-mdx-remote": "^4.4.1",
     "qs": "^6.11.2",
     "react": "^18",
     "react-dom": "^18"

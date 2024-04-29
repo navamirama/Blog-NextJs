@@ -12,7 +12,7 @@ interface IPropType {
 
 const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
     const router = useRouter();
-    console.log('Pagination Comp', page, pageCount);
+    // console.log('Pagination Comp', page, pageCount);
 
     const isNextDisabled = (): boolean => {
         return page >= pageCount;
