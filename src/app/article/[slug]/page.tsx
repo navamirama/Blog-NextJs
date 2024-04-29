@@ -4,8 +4,6 @@ import { IArticle } from '../../types/index';
 import { getArticles} from '@/http/index';
 import Image from "../../../../node_modules/next/image";
 import Head from 'next/head';
-import { MDXRemote, MDXRemoteSerializeResult } from '../../../../node_modules/next-mdx-remote';
-import Context from '@/components/BlockRendererClient';
 import { formatDate } from '../../../../utils';
 import {BlocksRenderer, type BlocksContent} from "@strapi/blocks-react-renderer"
 import BlockRendererClient from '@/components/BlockRendererClient';
@@ -16,9 +14,8 @@ interface IPropType {
     // searchParams : {[key: string]: string | string [] | undefined};
 }
 
-// const slug = async( {params , searchParams, notFound = false} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}, notFound: boolean} ) => {
-    // export default async function slug ({params , searchParams, notFound = false} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}, notFound: boolean})  {
-        export default async function slug ({params , notFound, searchParams} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}})  {
+
+export default async function slug ({params , notFound, searchParams} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}})  {
     const articlesdata = await getArticles(params, notFound);
     const title = articlesdata.props.articles.items[0].attributes.Title;
     const content: BlocksContent = articlesdata.props.articles.items[0].attributes.Body;
