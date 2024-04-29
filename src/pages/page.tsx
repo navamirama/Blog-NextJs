@@ -1,10 +1,8 @@
 import { fetchCategories } from '@/http/index';
-import type { GetServerSideProps, NextPage } from 'next';
+import type { NextPage } from 'next';
 import { AxiosResponse } from 'axios';
 import Head from 'next/head';
 import { ICategory, ICollectionResponse } from '../../types/index';
-
-import './globals.css';
 
 const Home: NextPage = () => {
   return (

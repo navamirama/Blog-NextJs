@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import type { AppProps } from 'next/app'
 import './globals.css'
