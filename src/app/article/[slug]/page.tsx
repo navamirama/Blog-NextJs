@@ -15,8 +15,8 @@ interface IPropType {
 }
 
 
-export default async function slug ({params , notFound, searchParams} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}})  {
-    const articlesdata = await getArticles(params, notFound);
+export default async function slug ({params , searchParams} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}})  {
+    const articlesdata = await getArticles(params);
     const title = articlesdata.props.articles.items[0].attributes.Title;
     const content: BlocksContent = articlesdata.props.articles.items[0].attributes.Body;
     console.log("content", content);

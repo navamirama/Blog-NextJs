@@ -19,7 +19,7 @@ export const fetchArticles = async (queryString: string) => api.get(`/api/articl
 
 export const fetchArticleBySlug = async(queryString: string) => api.get(`/api/articles?${queryString}`);
 
-export async function getArticles(params: any, notFound: boolean) {
+export async function getArticles(params: any) {
     console.log("HTTP params", params);
     console.log("running");
     
