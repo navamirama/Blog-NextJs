@@ -16,8 +16,9 @@ interface IPropType {
     // searchParams : {[key: string]: string | string [] | undefined};
 }
 
-const slug = async( {params , searchParams, notFound = false} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}, notFound: boolean} ) => {
-    const articlesdata = await getArticles(params, notFound);
+// const slug = async( {params , searchParams, notFound = false} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}, notFound: boolean} ) => {
+    export default async function slug ({params , searchParams, notFound = false} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}, notFound: boolean})  {
+const articlesdata = await getArticles(params, notFound);
     const title = articlesdata.props.articles.items[0].attributes.Title;
     const content: BlocksContent = articlesdata.props.articles.items[0].attributes.Body;
     console.log("content", content);
@@ -148,4 +149,4 @@ const slug = async( {params , searchParams, notFound = false} : {params: IPropTy
 }
 
 
-export default slug;
+
