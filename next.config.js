@@ -17,6 +17,5 @@ module.exports = {
         pathname: "/uploads/**",
       },
     ],
-    presets: ["@next/babel"],
   },
 };
