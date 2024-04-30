@@ -4,7 +4,7 @@ import { IArticle } from "../../types";
 import { formatDate } from "../../utils/index";
 
 interface IPropTypes {
-    articles: IArticle[];
+    article: IArticle;
 
 }
 
@@ -23,7 +23,7 @@ export default function BlogCard({ article }: IPropTypes) {
             </div>
 
             <span className="text-sm font-bold text-gray-600">
-                {article.attributes.author.data.attributes.username} {' '} {article.attributes.author.data.attributes.lastname} On {' '}
+                {article.attributes.author.data.attributes.firstname} {' '} {article.attributes.author.data.attributes.lastname} On {' '}
                 <span className="text-gray-400">
                     {formatDate(article.attributes.createdAt)}
                 </span>

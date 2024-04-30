@@ -27,7 +27,7 @@ interface IPropTypes {
   const pageData = searchParams['page'] ?? 1;
   const pageCountData = searchParams['pageCount'] ?? 2;
   const search = searchParams['search'] ?? '';
-  const categoriesData = await getCategories(search);
+  const categoriesData = await getCategories();
   const articlesdata = await getArticles(pageData, search);
   const categories = categoriesData.props.categories;
   const articles = articlesdata.props.articles;
@@ -55,7 +55,7 @@ interface IPropTypes {
   )
 }
 
-async function getCategories(params: string[]) {
+async function getCategories() {
   
   const { data: categories }: AxiosResponse<ICollectionResponse<ICategory[]>> = await fetchCategories();
   return {

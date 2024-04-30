@@ -7,7 +7,7 @@ export interface ICategory {
 
 export interface ICategoryAttribute {
     Title: string;
-    slug: string;
+    Slug: string;
 
 }
 
@@ -70,7 +70,7 @@ export interface IAuthor {
 
 export interface IArticlesAttribute {
     Title: string;
-    Slug: string;
+    slug: string;
     Body: BlocksContent;
     Image: IImageData;
     createdAt: string;
