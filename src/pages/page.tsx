@@ -4,7 +4,7 @@ import { AxiosResponse } from 'axios';
 import Head from 'next/head';
 import {  ICategory, ICollectionResponse } from '../../types/index';
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -30,4 +30,4 @@ async () => {
     }
   }
 }
-export default Home;
+// export default Home;

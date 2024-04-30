@@ -20,7 +20,7 @@ interface IPropTypes {
 }
 
 // export default async function Home({params , searchParams} : {params: {search: string[]}, searchParams: {[key: string]: string | string [] | undefined}}): NextPage<IPropTypes> {
-  export default async function Home({ searchParams
+  export default async function Page({ searchParams
 } : {
   searchParams: {[key: string]: string | string [] | undefined}}) {
    console.log("Search Params plzz", searchParams);
