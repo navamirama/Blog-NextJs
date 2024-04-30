@@ -1,7 +1,6 @@
 
 import { redirect } from 'next/navigation'
 import { fetchArticles, fetchCategories } from '@/http/index';
-import type { NextPage } from 'next';
 import { AxiosResponse } from 'axios';
 import Head from 'next/head';
 import { IArticle, ICategory, ICollectionResponse, IQueryOptions } from '../../types/index';
@@ -23,7 +22,7 @@ interface IPropTypes {
 // export default async function Home({params , searchParams} : {params: {search: string[]}, searchParams: {[key: string]: string | string [] | undefined}}): NextPage<IPropTypes> {
   export default async function Home({ searchParams
 } : {
-  searchParams: {[key: string]: string | string [] | undefined}}): NextPage<IPropTypes> {
+  searchParams: {[key: string]: string | string [] | undefined}}) {
    console.log("Search Params plzz", searchParams);
   const pageData = searchParams['page'] ?? 1;
   const pageCountData = searchParams['pageCount'] ?? 2;
