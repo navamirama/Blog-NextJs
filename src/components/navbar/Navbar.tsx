@@ -12,7 +12,7 @@ const Navbar = () => {
                 </span> */}
             </div>
         </Link>
-        <ul className="flex items-center">
+        {/* <ul className="flex items-center">
             <li className="mr-6 font-medium text-gray-600">
                 <a href="#">Products</a>
             </li>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <li className="mr-6 font-medium text-gray-600">
                 <a href="#">Company</a>
             </li>
-        </ul>
+        </ul> */}
         <ul className="flex items-center">
             <li className="mr-6 font-medium text-gray-600">
                 <a href="#" className="hover:text-gray-400">Login</a>
