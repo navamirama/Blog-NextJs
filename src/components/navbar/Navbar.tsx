@@ -6,10 +6,8 @@ const Navbar = () => {
     return (<nav className="flex items-center justify-between py-6">
         <Link href='/'>
             <div className="flex items-center cursor-pointer">
-                <Image src="/logo2.jpg" alt="logo" width={150} height={125} />
-                {/* <span className="font-bold ml-2 text-primary">
-                    Mindful Life Path
-                </span> */}
+                <Image src="/ajji-logo.png" alt="logo" width={150} height={125} />
+                
             </div>
         </Link>
         {/* <ul className="flex items-center">

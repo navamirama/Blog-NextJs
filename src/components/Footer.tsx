@@ -8,17 +8,17 @@ const Footer = () => {
                 <a
                     href="/"
                     className="flex items-center justify-center md:justify-start text-gray-900">
-                    <Image alt="footer image" src={'/logo2.jpg'} height={135} width={85} />
+                    <Image alt="footer image" src={'/ajji-logo.png'} height={135} width={85} />
                     {/* <span className="ml-3 text-md">Coder's Blog</span> */}
                 </a>
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-                    © 2023 Mindful Life Path —
+                    © 2024 Granny's Wisdom Diaries —
                     <a
                         href="https://twitter.com/codersgyan"
                         className="text-gray-600 ml-1"
                         rel="noopener noreferrer"
                         target="_blank">
-                        @cMindful LifePath
+                        @Granny's Wisdom Diaries
                     </a>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
