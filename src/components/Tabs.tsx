@@ -40,38 +40,54 @@ const router = useRouter();
 
     return (
         <div className="my-8 flex items-center justify-between border-b-2 border-gray-100">
-            <ul className="flex items-center">
+            {/* <ul className="flex items-center text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
                 <li
                     className={
-                        'mr-6 pb-6 border-b-4 rounded-sm ' +
+                        'mr-6 pb-6 border-b-4 rounded-sm w-full focus-within:z-10' +
                         `${
                             pathName === '/'
                                 ? 'border-primary text-primary font-bold'
                                 : 'border-white text-primary '
                         }`
                     }>
-                    <Link href="/">Recent</Link>
+                    <Link className="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" href="/">Recent</Link>
                 </li>
                 {categories.map((category) => {
                     return (
                         <li
                             key={category.id}
                             className={
-                                'mr-6 pb-6 border-b-4 rounded-sm ' +
+                                'mr-6 pb-6 border-b-4 rounded-sm w-full focus-within:z-10' +
                                 `${
                                     isActiveLink(category)
                                         ? 'border-primary text-primary'
                                         : 'border-white  text-secondary'
                                 }`
                             }>
-                            <Link
+                            <Link className="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white"
                                 href={`/category/${category.attributes.Slug}`}>
                                {category.attributes.Title}
                             </Link>
                         </li>
                     );
                 })}
-            </ul>
+            </ul> */}
+ <ul className="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+    <li className="w-full focus-within:z-10">
+    <Link className="text-xl inline-block w-full py-3 px-6 text-gray-900 bg-orange-400 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-orange-500 dark:text-white" href="/">Recent</Link>
+    </li>
+   
+    {categories.map((category) => {
+                    return (
+                        <li  key={category.id} className="w-full focus-within:z-10">
+                            <Link className="text-xl inline-block w-full text-nowrap py-3 px-6 text-gray-900 bg-orange-400 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-orange-500 dark:text-white"
+                                href={`/category/${category.attributes.Slug}`}>
+                               {category.attributes.Title}
+                            </Link>
+                        </li>
+                    );
+                })}   
+</ul>
             <div className="flex items-center">
                 <svg
                     className="h-4 fill-gray-500"
