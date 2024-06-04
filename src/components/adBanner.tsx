@@ -7,14 +7,15 @@ type AdBannerTypes = {
 
 const AdBanner = ({pId}: AdBannerTypes) => {
     return (
-       <ins> 
-      className="adsbygoogle"
-      style={{ display: "block" }}
-      data-ad-client="ca-pub-123456789"
-      {/* data-ad-slot={dataAdSlot}
-      data-ad-format={dataAdFormat}
-      data-full-width-responsive={dataFullWidthResponsive.toString()} */}
-    </ins>
+    //    <ins> 
+    //   className="adsbygoogle"
+    //   style={{ display: "block" }}
+    //   data-ad-client="ca-pub-123456789"
+    //   {/* data-ad-slot={dataAdSlot}
+    //   data-ad-format={dataAdFormat}
+    //   data-full-width-responsive={dataFullWidthResponsive.toString()} */}
+    // </ins>
+    <div></div>
        
     )
 }
