@@ -32,7 +32,7 @@ export default async function slug ({params , searchParams} : {params: IPropType
                         <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
                             <Image
                                 alt="articleImage"
-                                src={`${process.env.API_BASE_URL}${articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
+                                src={`${articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                                 height={40}
                                 width={40}
                             />
