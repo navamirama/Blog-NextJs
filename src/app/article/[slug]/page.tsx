@@ -52,7 +52,7 @@ export default async function slug ({params , searchParams} : {params: IPropType
                     <div className="text-lg text-gray-600 leading-8">
                         <img
                             className="w-full my-12 mb-6"
-                            src={`${process.env.API_BASE_URL}${articlesdata.props.articles.items[0].attributes.Image.data.attributes.url}`}
+                            src={`${articlesdata.props.articles.items[0].attributes.Image.data.attributes.url}`}
                             alt={articlesdata.props.articles.items[0].attributes.Title}
                         />
                        
