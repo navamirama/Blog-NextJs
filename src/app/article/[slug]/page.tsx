@@ -20,6 +20,7 @@ export default async function slug ({params , searchParams} : {params: IPropType
     const title = articlesdata.props.articles.items[0].attributes.Title;
     const content: BlocksContent = articlesdata.props.articles.items[0].attributes.Body;
     console.log("content", content);
+    console.log("Image ", articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url);
     return  (
     // <div>{articlesdata.props.articles.items[0].attributes.Title}</div>
     <>
