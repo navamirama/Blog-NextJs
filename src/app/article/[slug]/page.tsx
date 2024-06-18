@@ -14,7 +14,7 @@ interface IPropType {
     // searchParams : {[key: string]: string | string [] | undefined};
 }
 
-
+//trigger buildss
 export default async function slug ({params , searchParams} : {params: IPropType, searchParams: {[key: string]: string | string [] | undefined}})  {
     const articlesdata = await getArticles(params);
     const title = articlesdata.props.articles.items[0].attributes.Title;
