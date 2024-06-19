@@ -7,7 +7,7 @@ interface IPropTypes {
     article: IArticle;
 
 }
-
+//test
 export default function BlogCard({ article }: IPropTypes) {
     // console.log("Blog Card", article);
     console.log("Image Url", article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url);
