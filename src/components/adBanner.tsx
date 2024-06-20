@@ -4,7 +4,7 @@ import React from 'react'
 type AdBannerTypes = {
     pId: string;
 }
-
+//Test
 const AdBanner = ({pId}: AdBannerTypes) => {
     return (
     //    <ins> 
