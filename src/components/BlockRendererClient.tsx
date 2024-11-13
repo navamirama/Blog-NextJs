@@ -20,7 +20,7 @@ export default function BlockRendererClient({
     <BlocksRenderer
       content={content}
       blocks={{
-        paragraph: ({ children }) => <p className="text-neutral900 max-w-396">{children}</p>,
+        paragraph: ({ children }) => <p className="text-neutral900 max-w-96">{children}</p>,
         // ...or point to a design system
         heading: ({ children, level }) => {
           switch (level) {
