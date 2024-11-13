@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-   
+    "husky": "^4.3.4",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "@types/qs": "^6.9.9",
     "axios": "^1.6.5",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "husky": "^4.3.4",
-    "@types/node": "^16",
+    "@types/node": "^20",
     "pnpm": "8.15.9",
     "@types/react": "^18",
     "@types/react-dom": "^18",
