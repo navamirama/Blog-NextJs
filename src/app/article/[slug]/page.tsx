@@ -20,7 +20,7 @@ export default async function slug ({params , searchParams} : {params: IPropType
     const title = articlesdata.props.articles.items[0].attributes.Title;
     const content: BlocksContent = articlesdata.props.articles.items[0].attributes.Body;
     console.log("content", content);
-    console.log("Image ", articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url);
+    // console.log("Image ", articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url);
     return  (
     // <div>{articlesdata.props.articles.items[0].attributes.Title}</div>
     <>
@@ -31,12 +31,12 @@ export default async function slug ({params , searchParams} : {params: IPropType
                     </h1>
                     <div className="flex items-center my-4">
                         <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
-                            <Image
+                            {/* <Image
                                 alt="articleImage"
                                 src={`${articlesdata.props.articles.items[0].attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                                 height={40}
                                 width={40}
-                            />
+                            /> */}
                         </div>
                         <span className="text-sm font-bold text-gray-600">
                             {
