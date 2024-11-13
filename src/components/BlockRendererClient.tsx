@@ -28,8 +28,8 @@ export default function BlockRendererClient({
                 return <h1 className="text-3xl font-bold py-6 text-blue-900">{children}</h1>
               case 2:
                 return <h2 className="text-3xl font-bold py-6 text-blue-900">{children}</h2>
-                case 3:
-                return <h3 className="text-3xl font-bold py-6 text-blue-900">{children}</h3>
+                // case 3:
+                // return <h3 className="text-3xl font-bold py-6 text-blue-900">{children}</h3>
               // case 3:
               //     return <h3>{children}</h3>
               // case 4:
