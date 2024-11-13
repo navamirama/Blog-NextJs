@@ -17,7 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <AdSense pId="3788216384888856"/>
+      {/* <AdSense pId="3788216384888856"/> */}
+      <meta name="google-adsense-account" content="ca-pub-3788216384888856" ></meta>
       </head>
       
       <body className={`container mx-auto ${roboto.className}`}>
