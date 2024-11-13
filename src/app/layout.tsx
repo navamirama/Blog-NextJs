@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <AdSense pId="pub-3788216384888856"/>
+      <head>
+      <AdSense pId="3788216384888856"/>
+      </head>
+      
       <body className={`container mx-auto ${roboto.className}`}>
         <Navbar />
         <main className="pb-32">
