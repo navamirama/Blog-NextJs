@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "node_modules/.bin/husky-run install"
+    "lint": "next lint"
   },
   "dependencies": {
    
@@ -24,6 +23,7 @@
   "devDependencies": {
     "husky": "^4.3.4",
     "@types/node": "^16",
+    "pnpm": "8.15.9",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
